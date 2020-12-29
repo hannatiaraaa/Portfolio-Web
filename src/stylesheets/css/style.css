@@ -3,232 +3,260 @@
 */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    height: 100%;
-    line-height: 1.5;
-    box-sizing: border-box;
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  box-sizing: border-box;
 }
 
 html {
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    background: #0f3854;
-    background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
-    background-size: 100%;
-    font-family: 'Prompt', sans-serif;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-size: 100%;
+  font-family: "Prompt", sans-serif;
+  padding: 0.5%;
 }
 
-h1 { font-size: 64px; line-height:1.2em; margin:0 0 .8em; }
-h2 { font-size: 56px; line-height:1.4em; margin:0 0 .8em;  }
-h3 { font-size: 48px; line-height:1.4em; }
-h4 { font-size: 40px; line-height:1.4em;}
-h5 { font-size: 36px; line-height:1.4em; }
-h6 { font-size: 32px; line-height:1.2em; }
+h1 {
+  font-size: 64px;
+  line-height: 1.2em;
+  margin: 0 0 0.8em;
+}
+h2 {
+  font-size: 56px;
+  line-height: 1.4em;
+  margin: 0 0 0.8em;
+}
+h3 {
+  font-size: 48px;
+  line-height: 1.4em;
+}
+h4 {
+  font-size: 40px;
+  line-height: 1.4em;
+}
+h5 {
+  font-size: 36px;
+  line-height: 1.4em;
+}
+h6 {
+  font-size: 32px;
+  line-height: 1.2em;
+}
 
-p { font-size: 24px; line-height:1.2em; }
+p {
+  font-size: 24px;
+  line-height: 1.2em;
+}
 
-header, footer {
-    font-family: 'Cousine', monospace;
+header,
+footer {
+  font-family: "Cousine", monospace;
 }
 
 /* Header (Navigation) */
 header {
-    padding: 2.5% 20%;
+  padding: 2.5% 20%;
 }
 
 .nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .bar {
-    color: #c8f0ff;
-    cursor: pointer;
-    text-decoration: none;
+  color: #c8f0ff;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Container */
 .container {
-    text-align: center;
-    color: white;
-    display: flex;
-    align-items: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
 .desc {
-    margin: 0 5%;
-    flex: 2;
+  margin: 0 5%;
+  flex: 2;
 }
 
 .cover {
-    margin: 0 -5%;
-    flex: 1;
-    object-fit: cover;
-    opacity: 80%;
-    overflow: hidden;
-    border-radius: 15px;
+  margin: 0 -5%;
+  flex: 1;
+  object-fit: cover;
+  opacity: 80%;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .desc h1 {
-    color: #c8f0ff;
+  color: #c8f0ff;
 }
 
 .desc h1 i {
-    font-weight: normal;
-    color: white;
+  font-weight: normal;
+  color: white;
 }
 
 .desc p {
-    text-align: start;
+  text-align: start;
 }
 
 /* Button Hire Me */
 button {
-	font-size: 18px;
-	margin: 30px 0 10px;
-	line-height: 20px;
-	padding: 10px 30px;
-	height: 50px;
-	border: 2px solid #fbd22c;
-	background: #fbd22c;
-	transition: all 0.4s;
-	color: rgb(18, 18, 22);
-    border-radius: 100px;
+  font-size: 18px;
+  margin: 30px 0 10px;
+  line-height: 20px;
+  padding: 10px 30px;
+  height: 50px;
+  border: 2px solid #fbd22c;
+  background: #fbd22c;
+  transition: all 0.4s;
+  color: rgb(18, 18, 22);
+  border-radius: 100px;
 }
 
-button:hover, button:focus, button:active {
-	border: 2px solid #fbd22c;
-	background: transparent;
-	color: #fbd22c;
+button:hover,
+button:focus,
+button:active {
+  border: 2px solid #fbd22c;
+  background: transparent;
+  color: #fbd22c;
 }
 
 .hire {
-    text-decoration: none;
-    color: rgb(18, 18, 22);
-    cursor: pointer;
+  text-decoration: none;
+  color: rgb(18, 18, 22);
+  cursor: pointer;
 }
 
 .hire:hover {
-	text-decoration: none;
-    color: #fbd22c;
-	-webkit-transition: all .8s ease;
-	transition: all .8s ease;
+  text-decoration: none;
+  color: #fbd22c;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 /* Social Media */
 .social-media {
-    margin-top: 5%;
+  margin-top: 5%;
 }
 
 .icon-button {
-	border-radius: 2.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 1.3rem;
-	height: 2.6rem;
-	line-height: 2.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 2.6rem;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
 }
 
 .icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-    width: 0;
-    z-index: -1;
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+  z-index: -1;
 }
 
 .icon-button:hover span {
-	width: 2.6rem;
-	height: 2.6rem;
-	border-radius: 2.6rem;
-	margin: -1.3rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
 }
 
 .icon-button i {
-	background: none;
-	color: white;
-	height: 2.6rem;
-	left: 0;
-	line-height: 2.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 2.6rem;
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 2.6rem;
 }
 
 /* ----------------------------- */
 
 .hackerrank span {
-	background-color: #1ba94c;
+  background-color: #1ba94c;
 }
 .github span {
-	background-color: #333;
+  background-color: #333;
 }
 .linkedin span {
-	background-color: #0077b5;
+  background-color: #0077b5;
 }
 .email span {
-	background-color: #ff0000;
+  background-color: #ff0000;
 }
 .whatsapp span {
-	background-color: #25d366;
+  background-color: #25d366;
 }
 .instagram span {
-	background-color: #c13584;
+  background-color: #c13584;
 }
 .telegram span {
-	background-color: #0088cc;
+  background-color: #0088cc;
 }
 
 /* ----------------------------- */
 
 .icon-button .fa-hackerrank {
-	color: #1ba94c;
+  color: #1ba94c;
 }
 .icon-button .fa-github {
-	color: #f5f5f5;
+  color: #f5f5f5;
 }
 .icon-button .fa-linkedin-in {
-	color: #0077b5;
+  color: #0077b5;
 }
 .icon-button .fa-envelope-open-text {
-	color: #ff0000;
+  color: #ff0000;
 }
 .icon-button .fa-whatsapp {
-	color: #25d366;
+  color: #25d366;
 }
 .icon-button .fa-instagram {
-	color: #c13584;
+  color: #c13584;
 }
 .icon-button .fa-telegram-plane {
-	color: #0088cc;
+  color: #0088cc;
 }
 
 /* ----------------------------- */
@@ -240,55 +268,94 @@ button:hover, button:focus, button:active {
 .icon-button:hover .fa-whatsapp,
 .icon-button:hover .fa-instagram,
 .icon-button:hover .fa-telegram-plane {
-	color: white;
+  color: white;
 }
 
 footer {
-    padding: 2.5%;
+  padding: 2.5%;
 }
 
 footer p {
-    color: #c8f0ff;
-    font-size: 12px;
-    text-align: center;
+  color: #c8f0ff;
+  font-size: 12px;
+  text-align: center;
 }
 
 .copyright:hover {
-    color: #fbd22c!important;
-    filter: saturate(105%);
+  color: #fbd22c !important;
+  filter: saturate(105%);
 }
 
-@media all and (min-width: 1080px) {
-    .cover {
-        height: 100%;
-        width: 20%;
-    }
-}
-
-@media all and (max-width: 720px) {
-    .desc {
-        margin: 5% 10%;
-    }
-
-    .icon-button {
-      border-radius: 1.6rem;
-      font-size: 0.8rem;
-      height: 1.6rem;
-      line-height: 1.6rem;
-      width: 1.6rem;
-    }
-  
-    .icon-button:hover span {
-      width: 1.6rem;
-      height: 1.6rem;
-      border-radius: 1.6rem;
-      margin: -0.8rem;
-    }
-    
-    .icon-button i {
-        height: 1.6rem;
-        line-height: 1.6rem;
-        width: 1.6rem;
-    } 
+@media all and (min-width: 1200px) {
+  .cover {
+    height: 100%;
+    width: 20%;
   }
-  
+}
+
+@media all and (max-width: 768px) {
+  .desc {
+    margin: 5% 10%;
+  }
+
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  .icon-button i {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  footer {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .desc {
+    text-align: left;
+  }
+
+  .desc h3 {
+    width: max-content;
+  }
+
+  .icon-button {
+    width: max-content;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 28px;
+  }
+  h6 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
