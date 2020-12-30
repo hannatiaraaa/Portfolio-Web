@@ -2,10 +2,53 @@
     Copyright (C) 2020-2021 Hanna Tiara Andarlia
 */
 
-// Import Font Awesome
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
+// typeWriter Hello ...
+let hello = document.querySelector(".hello");
 
-library.add(fas, far, fab)
+let text = ""
+let textArr = [
+  "World!",
+  "Clients",
+  "Recruiter",
+]
+
+let currentTextIndex = -1;
+let letterIndex = -1;
+
+function addLetter(){
+    letterIndex++;
+    if (letterIndex < text.length) {
+        setTimeout(function() {
+            hello.textContent += text[letterIndex];
+            addLetter();
+        }, 100)
+    } else {
+        setTimeout(function() {
+            removeLetter();
+        }, 2500)
+    }
+}
+
+function removeLetter(){
+    letterIndex--;
+    if (letterIndex >= 0) {
+        setTimeout( function() {
+            hello.textContent = text.slice(0, letterIndex);
+            removeLetter();
+        }, 100)
+    } else {
+        updateText();
+    }
+}
+
+function updateText() {
+    currentTextIndex++;
+    if (currentTextIndex === textArr.length) {
+        currentTextIndex = 0;
+    }
+    
+    text = textArr[currentTextIndex];
+    addLetter();
+}
+
+updateText()

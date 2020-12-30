@@ -5,13 +5,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
+  display: grid;
   height: 100%;
   line-height: 1.5;
-  box-sizing: border-box;
 }
 
 html {
@@ -25,6 +26,7 @@ body {
   background-size: 100%;
   font-family: "Prompt", sans-serif;
   padding: 0.5%;
+  overflow: auto;
 }
 
 h1 {
@@ -40,6 +42,7 @@ h2 {
 h3 {
   font-size: 48px;
   line-height: 1.4em;
+  margin: 0 0 0.4em;
 }
 h4 {
   font-size: 40px;
@@ -66,7 +69,8 @@ footer {
 
 /* Header (Navigation) */
 header {
-  padding: 2.5% 20%;
+  padding: 5% 20%;
+  align-self: start;
 }
 
 .nav {
@@ -79,10 +83,12 @@ header {
   color: #c8f0ff;
   cursor: pointer;
   text-decoration: none;
+  padding: 0 2.5%;
 }
 
 /* Container */
 .container {
+  place-self: center;
   text-align: center;
   color: white;
   display: flex;
@@ -90,7 +96,7 @@ header {
 }
 
 .desc {
-  margin: 0 5%;
+  margin: 5% 10%;
   flex: 2;
 }
 
@@ -101,6 +107,11 @@ header {
   opacity: 80%;
   overflow: hidden;
   border-radius: 15px;
+}
+
+.desc h3 {
+  letter-spacing: 10px;
+  font-weight: lighter;
 }
 
 .desc h1 {
@@ -272,7 +283,8 @@ button:active {
 }
 
 footer {
-  padding: 2.5%;
+  padding: 5%;
+  align-self: end;
 }
 
 footer p {
@@ -286,18 +298,24 @@ footer p {
   filter: saturate(105%);
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1200px), (min-height: 1024x) {
   .cover {
     height: 100%;
     width: 20%;
   }
 }
 
-@media all and (max-width: 768px) {
-  .desc {
-    margin: 5% 10%;
+@media all and (max-width: 800px) {
+  .desc h3 {
+    height: 150px;
+    width: 350px;
   }
+}
 
+@media all and (max-width: 604px) {
+  body {
+    display: block;
+  }
   .icon-button {
     border-radius: 1.6rem;
     font-size: 0.8rem;
@@ -318,10 +336,6 @@ footer p {
     line-height: 1.6rem;
     width: 1.6rem;
   }
-
-  footer {
-    padding: 5%;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -330,7 +344,8 @@ footer p {
   }
 
   .desc h3 {
-    width: max-content;
+    height: 100px;
+    width: 250px;
   }
 
   .icon-button {
@@ -340,20 +355,8 @@ footer p {
   h1 {
     font-size: 48px;
   }
-  h2 {
-    font-size: 40px;
-  }
   h3 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 32px;
-  }
-  h5 {
-    font-size: 28px;
-  }
-  h6 {
-    font-size: 24px;
+    font-size: 30px;
   }
   p {
     font-size: 20px;
