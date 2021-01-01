@@ -3,13 +3,13 @@
 */
 
 // typeWriter Hello ...
-let hello = document.querySelector(".hello");
+let hello = document.querySelector("#hello");
 
-let text = ""
+let text = "";
 let textArr = [
-  "World!",
-  "Clients",
-  "Recruiter",
+    "World!", 
+    "Clients", 
+    "Recruiter",
 ]
 
 let currentTextIndex = -1;
@@ -51,4 +51,4 @@ function updateText() {
     addLetter();
 }
 
-updateText()
+updateText();

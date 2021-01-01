@@ -1,6 +1,7 @@
 /* 
     Copyright (C) 2020-2021 Hanna Tiara Andarlia
 */
+@import "./fonts.css";
 
 * {
   margin: 0;
@@ -24,7 +25,7 @@ body {
   background: #0f3854;
   background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
   background-size: 100%;
-  font-family: "Prompt", sans-serif;
+  font-family: "Prompt";
   padding: 0.5%;
   overflow: auto;
 }
@@ -64,7 +65,7 @@ p {
 
 header,
 footer {
-  font-family: "Cousine", monospace;
+  font-family: "Cousine";
 }
 
 /* Header (Navigation) */
@@ -84,6 +85,13 @@ header {
   cursor: pointer;
   text-decoration: none;
   padding: 0 2.5%;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+
+.bar:hover {
+  letter-spacing: 5px;
+  color: #fbd22c;
 }
 
 /* Container */
@@ -137,7 +145,6 @@ button {
   border: 2px solid #fbd22c;
   background: #fbd22c;
   transition: all 0.4s;
-  color: rgb(18, 18, 22);
   border-radius: 100px;
 }
 
@@ -146,13 +153,12 @@ button:focus,
 button:active {
   border: 2px solid #fbd22c;
   background: transparent;
-  color: #fbd22c;
+  box-shadow: 0 0 12px -2px #c8f0ff;
 }
 
 .hire {
   text-decoration: none;
   color: rgb(18, 18, 22);
-  cursor: pointer;
 }
 
 .hire:hover {
@@ -160,6 +166,13 @@ button:active {
   color: #fbd22c;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
+  box-shadow: 0 0 2px -2px #c8f0ff;
+  cursor: pointer;
+}
+
+button:active,
+.hire:hover:after {
+  transform: translate(10%, 20%);
 }
 
 /* Social Media */
@@ -328,7 +341,7 @@ footer p {
   }
 }
 
-@media all and (max-width: 604px) {
+@media all and (max-width: 640px) {
   body {
     display: block;
   }
