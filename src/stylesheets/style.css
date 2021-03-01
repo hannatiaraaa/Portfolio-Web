@@ -243,6 +243,9 @@ button:active,
 .github span {
   background-color: #333;
 }
+.gitlab span {
+  background-color: #fc6d26;
+}
 .linkedin span {
   background-color: #0077b5;
 }
@@ -267,6 +270,9 @@ button:active,
 .icon-button .fa-github {
   color: #f5f5f5;
 }
+.icon-button .fa-gitlab {
+  color: #db3b21;
+}
 .icon-button .fa-linkedin-in {
   color: #0077b5;
 }
@@ -287,6 +293,7 @@ button:active,
 
 .icon-button:hover .fa-hackerrank,
 .icon-button:hover .fa-github,
+.icon-button:hover .fa-gitlab,
 .icon-button:hover .fa-linkedin-in,
 .icon-button:hover .fa-envelope-open-text,
 .icon-button:hover .fa-whatsapp,
