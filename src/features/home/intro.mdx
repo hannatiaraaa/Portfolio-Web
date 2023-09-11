@@ -1,0 +1,17 @@
+import { Noto_Sans_Mono } from 'next/font/google';
+import { TypewritterTexts } from 'components/Typewritter';
+
+export const AnonymousPro = Noto_Sans_Mono({ subsets: ['latin'], weight: '300' });
+
+<div>
+<code className={`${AnonymousPro.className} md:text-4xl tracking-widest`}
+>
+  Hello <TypewritterTexts
+    texts={['World!', 'Clients', 'Recruiter']}
+    speed={300}
+  />
+</code><br/>
+
+# My name is **Hanna Tiara Andarlia**
+
+</div>
