@@ -1,0 +1,17 @@
+{
+  "*": {
+    "type": "page"
+  },
+  "index": {
+    "title": "Home",
+    "display": "hidden",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "href": "mailto:hannatiara@gmail.com",
+    "newWindow": true
+  }
+}
