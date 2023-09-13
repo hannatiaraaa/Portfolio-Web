@@ -3,6 +3,10 @@ import type { DocsThemeConfig } from 'nextra-theme-docs';
 
 const phone = process.env.NEXT_PUBLIC_PHONE;
 const resumeId = process.env.NEXT_PUBLIC_RESUME_ID;
+const ogConfig = {
+  titleTemplate: 'Hanna',
+  description: 'Software Engineer / Frontend Developer using React Native, Next JS, Tailwind CSS in TypeScript',
+};
 
 const themeConfig: DocsThemeConfig = {
   logo: (
@@ -46,8 +50,7 @@ const themeConfig: DocsThemeConfig = {
     ),
   },
   head: () => {
-    const title = 'Hanna';
-    const description = 'Hanna personal website';
+    const { titleTemplate, description } = ogConfig;
 
     return (
       <>
@@ -65,11 +68,11 @@ const themeConfig: DocsThemeConfig = {
         />
         <meta
           name='og:title'
-          content={title}
+          content={titleTemplate}
         />
         <meta
-          name='apple-mobile-web-app-title'
-          content={title}
+          name='apple-mobile-web-app-title '
+          content={titleTemplate}
         />
       </>
     );
@@ -78,11 +81,12 @@ const themeConfig: DocsThemeConfig = {
     const { asPath } = useRouter();
 
     if (['/'].includes(asPath)) {
-      return { titleTemplate: 'Hanna' };
+      return ogConfig;
     }
 
-    return { titleTemplate: `Hanna's %s` };
+    return { ...ogConfig, titleTemplate: `${ogConfig.titleTemplate}'s %s` };
   },
+  gitTimestamp: undefined,
   footer: {
     text: () => (
       <span>
