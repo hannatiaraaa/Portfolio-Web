@@ -10,7 +10,7 @@ interface ITypewritter extends IGeneralTypewritter {
   onEndText?: () => void;
 }
 
-export interface ITypewritterTexts extends IGeneralTypewritter {
+interface ITypewritterTexts extends IGeneralTypewritter {
   texts: string[];
 }
 

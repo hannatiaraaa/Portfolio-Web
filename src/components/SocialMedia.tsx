@@ -1,5 +1,5 @@
 import React from 'react';
-import { SOCIAL_MEDIA_ICON_NAME } from 'configs/SocialMedia';
+import { SOCIAL_MEDIA_ICON_NAME } from 'types/SocialMedia';
 
 type Props = {
   name: keyof typeof SOCIAL_MEDIA_ICON_NAME;
