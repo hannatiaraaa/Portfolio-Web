@@ -1,3 +1,4 @@
+import { mono } from 'configs/fonts';
 import { useRouter } from 'next/router';
 import type { DocsThemeConfig } from 'nextra-theme-docs';
 
@@ -8,12 +9,13 @@ const ogConfig = {
   description: 'Software Engineer / Frontend Developer using React Native, Next JS, Tailwind CSS in TypeScript',
 };
 
+const logoClass = `flex ${mono.className} tracking-widest text-2xl md:text-xl text-dark-theme dark:text-light-theme font-black`;
+
 const themeConfig: DocsThemeConfig = {
   logo: (
-    <>
-      <span className='hidden lg:block'>Hanna Tiara Andarlia</span>
-      <span className='text-dark-theme dark:text-light-theme font-black lg:hidden'>H</span>
-    </>
+    <span className={logoClass}>
+      H<span className={`hidden md:block ${logoClass}`}>ANNA</span>
+    </span>
   ),
   search: {
     component: () => null,
