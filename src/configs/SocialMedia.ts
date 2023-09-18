@@ -1,4 +1,4 @@
-import { TSocialMedia } from 'types/SocialMedia';
+import type { TSocialMedia } from 'types/SocialMedia';
 
 const phone = process.env.NEXT_PUBLIC_PHONE;
 

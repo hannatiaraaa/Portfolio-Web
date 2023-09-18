@@ -1,4 +1,4 @@
-import type { TSocialMedia } from 'configs/SocialMedia';
+import type { TSocialMedia } from 'types/SocialMedia';
 import SocialMedia from 'components/SocialMedia';
 
 type Props = {
