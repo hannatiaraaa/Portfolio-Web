@@ -1,4 +1,4 @@
-import { Skills, TSkills, TSkillsSection } from 'types/Skills';
+import { Skills, type TSkills, type TSkillsSection } from 'types/Skills';
 
 const icons = {
   js: require('assets/icons/js.svg'),
