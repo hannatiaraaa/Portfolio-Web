@@ -26,10 +26,11 @@ const config: Config = {
       colors: {
         'bg-dark': 'var(--bg-dark)',
         'bg-light': 'var(--bg-light)',
-        'dark-theme': 'var(--dark-theme)',
-        'light-theme': 'var(--light-theme)',
+        'dark-theme': '#0f3854',
+        'light-theme': '#cee6f6',
         'secondary-dark-theme': 'var(--secondary-dark-theme)',
         'secondary-light-theme': 'var(--secondary-light-theme)',
+        primary: '#1C8ADB',
         socialMedia: {
           email: '#ff0000',
           linkedin: '#0077b5',
