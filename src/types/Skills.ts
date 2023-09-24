@@ -38,9 +38,9 @@ export enum Skills {
 }
 
 export type TSkills = {
-  name: Skills;
+  name: string;
   description?: string;
-  icon?: StaticImport;
+  noIcon?: boolean;
 };
 
 export type TSkillsSection = {
