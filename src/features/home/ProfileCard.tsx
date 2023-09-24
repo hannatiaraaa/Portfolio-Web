@@ -4,8 +4,6 @@ import { RunningDesignation } from './components/RunningDesignation';
 import { completeSocialMedia } from 'configs/SocialMedia';
 import { SocialMediaList } from './components/SocialMediaList';
 
-const profile = require('assets/images/profile.svg');
-
 export const ProfileCard = () => {
   let ref: React.MutableRefObject<any> = useRef(null);
   let [style, setStyle] = useState<React.CSSProperties>({});
@@ -58,9 +56,11 @@ export const ProfileCard = () => {
         className='flex flex-col overflow-hidden transition-all duration-200 ease-out xl:rounded-lg  bg-bg-light dark:bg-bg-dark shadow-dark-theme shadow-lg dark:shadow-light-theme lg:outline lg:outline-1 outline-gray-600 dark:outline-gray-100 gap-8'
       >
         <Image
-          src={profile}
+          src='profile'
           alt='profile picture'
           priority
+          width={832}
+          height={480}
           className='w-[52rem] h-[30rem] object-cover'
         />
         <div className='flex flex-col flex-1 items-center justify-evenly gap-2'>
