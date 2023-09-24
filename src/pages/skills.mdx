@@ -1,25 +1,9 @@
-import SkillsSet from 'features/skills/SkillsSet';
-import skills, { allSkills } from 'configs/Skills';
-
-export const RenderSkills = () => {
-  return skills.map(({ title, data }) => (
-    <div className='hidden md:block'>
-      <h3>{title}</h3>
-      <SkillsSet data={data} />
-      <br />
-    </div>
-  ));
-};
+import Skills from 'features/skills';
 
 <div className='py-9 gap-12'>
 # Skills
 
 <p className='mt-4 mb-10 text-lg'>These are the tools within my skill set that I am proficient in using</p>
 
-<SkillsSet
-  className='md:hidden'
-  data={allSkills}
-/>
-
-<RenderSkills />
+<Skills />
 </div>
