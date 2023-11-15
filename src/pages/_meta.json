@@ -9,6 +9,9 @@
     "title": "Home",
     "display": "hidden"
   },
+  "projects": {
+    "title": "Projects"
+  },
   "skills": "Skills",
   "contact": {
     "title": "Contact ↗",
